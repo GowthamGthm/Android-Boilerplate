@@ -48,16 +48,24 @@ new-structure
 
 ```
 abderrazak.com.recycleviewcardview
+├─ data
+    ├─ local
+    ├─ model
+    ├─ remote
 ├─ network
-├─ models
+    ├─ callbacks
+    ├─ services
+    ├─ tasks
 ├─ managers
-├─ utils
-├─ fragments
+├─ ui
+│   ├─ main
+    ├─ detail
+    ├─ etc..
+├─ util
 └─ views
    ├─ adapters
-   ├─ actionbar
    ├─ widgets
-   └─ notifications
+   └─ callbacks
 ```
 ### How to implement a new screen following MVP
 Imagine you have to implement a main screen.

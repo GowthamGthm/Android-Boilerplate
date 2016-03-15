@@ -77,11 +77,34 @@ Imagine you have to implement a main screen.
 
 3. Define the view interface that your Activity is going to implement. Create a new interface called MainView. Add the methods that you think will be necessary, ```e.g. showDialog()```
 
-4. Create a MainPresenterImpl class that implement MainPresenter.Implement the methods in MainPresenter that your Activity requires to perform the necessary actions, ```e.g. signIn(String email)```.
+4. Create a MainPresenterImpl class that implement MainPresenter.Implement the methods in MainPresenter that your Activity requires to perform the necessary actions, ```e.g. setItems(List<Movie> movieItems)```.
 
-5. Create a SignInPresenterTestand write unit tests for signIn(email). Remember to mock the SignInMvpView and also the DataManager.
+5. Create a MainPresenterTest and write unit tests for ```e.g. setItems(List<Movie> movieItems)```. Remember to mock the MainView.
 
 6. Make your MainActivity implement SignInMvpView and implement the required methods like showDialog()
 In your activity, inject a new instance of MAinPresenter and call ``` presenter = new MainPresenterImpl(this) ``` from onCreate and ``` presenter.onDestroy() ``` from onDestroy(). Also, set up a click listener in your button that calls presenter.sortList().
 
 ### Things that experience made me learn the hard way
+
+1. Think twice before adding any third party library, it’s a really serious commitment;
+
+2. Don’t use a database unless you really need to;
+
+3. Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you;
+
+4. RxJava is the best alternative to AsyncTasks and so much more;
+
+5. Retrofit is the best networking library there is;
+
+6. Shorten your code with Retrolambda;
+
+7. Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!;
+
+8. I use EventBus and it’s great, but I don’t use it too much because the codebase would get really messy;
+
+9. Package by Feature, not layers;
+
+10. Move everything off the application thread;
+
+11. lint your views to help you optimize the layouts and layout hierarchies so you can identify redundant views that could perhaps be removed;
+

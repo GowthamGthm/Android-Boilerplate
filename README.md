@@ -23,6 +23,10 @@ Libraries and tools included:
 ## Architecture
 This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
 
+<p align="center">
+    <img src="images/screens.png" alt="Screenshots"/>
+</p>
+
 ## Project structure
 ```
 new-structure

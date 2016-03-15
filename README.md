@@ -69,7 +69,7 @@ abderrazak.com.recycleviewcardview
    ├─ widgets
    └─ callbacks
 ```
-### How to implement a new screen following MVP
+## How to implement a new screen following MVP
 
 Imagine you have to implement a main screen.
 
@@ -86,7 +86,7 @@ Imagine you have to implement a main screen.
 6. Make your MainActivity implement SignInMvpView and implement the required methods like showDialog()
 In your activity, inject a new instance of MAinPresenter and call ``` presenter = new MainPresenterImpl(this) ``` from onCreate and ``` presenter.onDestroy() ``` from onDestroy(). Also, set up a click listener in your button that calls presenter.sortList().
 
-### Things that experience made me learn the hard way
+## Things that experience made me learn the hard way
 
  1.  Think twice before adding any third party library, it’s a really serious commitment
 
@@ -133,7 +133,7 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
  22. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
 
 
-### Contributor
+## Contributor
 
 Author: Abderrazak LAANAYA 
 laanayabdrzak@gmail.com
@@ -142,3 +142,17 @@ laanayabdrzak@gmail.com
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
 </a>
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

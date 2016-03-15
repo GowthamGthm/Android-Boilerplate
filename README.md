@@ -5,9 +5,9 @@ Sample Android app that I use as a reference for my new Android projects. It dem
 Libraries and tools included:
 
 - Support Library
-- Recycleview & Cardview
-- Material design support
-- Palette support
+- [Recycleview & Cardview](http://developer.android.com/training/material/lists-cards.html)
+- [Material design support](http://android-developers.blogspot.com/2015/05/android-design-support-library.html)
+- [Palette support](http://developer.android.com/reference/android/support/v7/graphics/Palette.html)
 - [Support annotations](http://tools.android.com/tech-docs/support-annotations)
 - [Retrolambda](https://github.com/evant/gradle-retrolambda)
 - [Retrofit2](http://square.github.io/retrofit/)

@@ -65,7 +65,9 @@ abderrazak.com.recycleviewcardview
 
 - Put passwords and sensitive data in gradle.properties
 
-- Use the Jackson library to parse JSON data
+- Use Retrofit for fetch data from the internet
+
+- Use (Picasso || Glide) for thumbnails, I suggest you to use glide instead of Picasso
 
 - Don't write your own HTTP client, use Volley or OkHttp libraries
 
@@ -89,12 +91,11 @@ abderrazak.com.recycleviewcardview
 
 - Avoid client-side processing for WebViews, and beware of leaks
 
-- Use Robolectric for unit tests, Robotium for connected (UI) tests
+- Use Robolectric for unit tests, Robotium or Espresso for connected (UI) tests
 
-- Use Genymotion as your emulator
+- Use Genymotion as your emulator || Vysor lets you view and control your Android on your computer Easy peasy. 
 
 - Always use ProGuard or DexGuard
 
 - Use SharedPreferences for simple persistence, otherwise ContentProviders
 
-- Use Stetho to debug your application

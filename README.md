@@ -57,3 +57,4 @@ abderrazak.com.recycleviewcardview
    ├─ widgets
    └─ notifications
 ```
+# How to implement a new screen following MVP

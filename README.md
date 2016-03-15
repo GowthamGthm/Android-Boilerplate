@@ -28,14 +28,32 @@ new-structure
 │  ├─ src
 │  │  ├─ androidTest
 │  │  │  └─ java
-│  │  │     └─ com/abderrazak/project
+│  │  │     └─ com/abderrazak/recycleviewcardview
+      ├─ test
+│  │  │  └─ java
+│  │  │     └─ com/abderrazak/recycleviewcardview
 │  │  └─ main
 │  │     ├─ java
-│  │     │  └─ com/abderrazak/project
+│  │     │  └─ com/abderrazak/recycleviewcardview
 │  │     ├─ res
 │  │     └─ AndroidManifest.xml
 │  ├─ build.gradle
 │  └─ proguard-rules.pro
 ├─ build.gradle
 └─ settings.gradle
+```
+# Java packages architecture
+
+```
+abderrazak.com.recycleviewcardview
+├─ network
+├─ models
+├─ managers
+├─ utils
+├─ fragments
+└─ views
+   ├─ adapters
+   ├─ actionbar
+   ├─ widgets
+   └─ notifications
 ```

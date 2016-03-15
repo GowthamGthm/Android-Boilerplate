@@ -37,7 +37,7 @@ new-structure
 │  │  ├─ androidTest
 │  │  │  └─ java
 │  │  │     └─ com/abderrazak/recycleviewcardview
-      ├─ test
+│  │  ├─ test
 │  │  │  └─ java
 │  │  │     └─ com/abderrazak/recycleviewcardview
 │  │  └─ main

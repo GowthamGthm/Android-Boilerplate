@@ -17,7 +17,7 @@ Libraries and tools included:
 - Latest Android SDK Tools and build tools.
 
 # Architecture
-This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them here.(http://hannesdorfmann.com/mosby/mvp/)
+This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here].(http://hannesdorfmann.com/mosby/mvp/)
 
 # Project structure
 

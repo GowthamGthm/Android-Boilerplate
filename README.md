@@ -42,7 +42,7 @@ new-structure
 ├─ build.gradle
 └─ settings.gradle
 ```
-# Java packages architecture
+## Java packages architecture
 
 ```
 abderrazak.com.recycleviewcardview

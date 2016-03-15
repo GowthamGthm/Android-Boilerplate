@@ -136,8 +136,9 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 ## Contributor
 ```
 Author: Abderrazak LAANAYA 
-laanayabdrzak@gmail.com
 ```
+laanayabdrzak@gmail.com
+
 <a href="https://www.linkedin.com/in/laanayabdrzak">
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />

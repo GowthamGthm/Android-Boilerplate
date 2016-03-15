@@ -55,18 +55,18 @@ new-structure
 ```
 abderrazak.com.recycleviewcardview
 ├─ data
-    ├─ local
-    ├─ model
-    ├─ remote
+│   ├─ local
+│   ├─ model
+│   ├─ remote
 ├─ network
-    ├─ callbacks
-    ├─ services
-    ├─ tasks
+│   ├─ callbacks
+│   ├─ services
+│   ├─ tasks
 ├─ managers
 ├─ ui
 │   ├─ main
-    ├─ detail
-    ├─ etc..
+│   ├─ detail
+│   ├─ etc..
 ├─ util
 └─ views
    ├─ adapters

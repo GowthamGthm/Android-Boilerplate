@@ -87,7 +87,7 @@ Imagine you have to implement a main screen.
 In your activity, inject a new instance of MAinPresenter and call ``` presenter = new MainPresenterImpl(this) ``` from onCreate and ``` presenter.onDestroy() ``` from onDestroy(). Also, set up a click listener in your button that calls presenter.sortList().
 
 ### Things that experience made me learn the hard way
-```
+
  1. Think twice before adding any third party library, it’s a really serious commitment
 
  2. Don’t use a database unless you really need to
@@ -130,5 +130,5 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
       
  21. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
 
-```
+
 ### TODO

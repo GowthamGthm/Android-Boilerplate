@@ -9,6 +9,7 @@ Libraries and tools included:
 - material design support
 - palette support
 - Retrofit2
+- Picasso
 - Butterknife
 
 ## Requirements

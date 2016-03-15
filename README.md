@@ -24,7 +24,7 @@ Libraries and tools included:
 This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
 
 <p align="center">
-    <img src="images/screens.png" alt="Screenshots"/>
+    <img src="http://hannesdorfmann.com/images/mosby/mvp-workflow.png" alt="Screenshots"/>
 </p>
 
 ## Project structure

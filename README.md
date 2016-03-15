@@ -16,9 +16,8 @@ Libraries and tools included:
 - [Otto](http://square.github.io/otto/)
 
 ## Requirements
-- Android SDK.
+- [Latest Android SDK Tools and build tools](http://developer.android.com/sdk/index.html).
 - Android 6.0 (API 23) .
-- Latest Android SDK Tools and build tools.
 
 ## Architecture
 This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).

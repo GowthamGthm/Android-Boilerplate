@@ -9,9 +9,9 @@ Libraries and tools included:
 - Material design support
 - Retrolambda
 - Palette support
-- Retrofit2
-- Picasso
-- Butterknife
+- [Retrofit2]()
+- [Picasso]()
+- [Butterknife]()
 
 ## Requirements
 - Android SDK.
@@ -19,7 +19,7 @@ Libraries and tools included:
 - Latest Android SDK Tools and build tools.
 
 ## Architecture
-This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here](http://hannesdorfmann.com/mosby/mvp/).
+This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
 
 ## Project structure
 ```
@@ -68,15 +68,16 @@ abderrazak.com.recycleviewcardview
    └─ callbacks
 ```
 ### How to implement a new screen following MVP
+
 Imagine you have to implement a main screen.
 
-1. Create a new package under ui called main.
+1. Create a new package under ```ui``` called main.
 
-2. Create an new Activity called MainActivity. You could also use a Fragment.
+2. Create an new Activity called ```MainActivity```. You could also use a Fragment.
 
-3. Define the view interface that your Activity is going to implement. Create a new interface called MainView. Add the methods that you think will be necessary, e.g. showDialog()
+3. Define the view interface that your Activity is going to implement. Create a new interface called MainView. Add the methods that you think will be necessary, ```e.g. showDialog()```
 
-4. Create a MainPresenterImpl class that implement MainPresenter.Implement the methods in MainPresenter that your Activity requires to perform the necessary actions, e.g. signIn(String email).
+4. Create a MainPresenterImpl class that implement MainPresenter.Implement the methods in MainPresenter that your Activity requires to perform the necessary actions, ```e.g. signIn(String email)```.
 
 5. Create a SignInPresenterTestand write unit tests for signIn(email). Remember to mock the SignInMvpView and also the DataManager.
 
@@ -89,11 +90,11 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 - Put passwords and sensitive data in gradle.properties
 
-- Use Retrofit for fetch data from the internet
+- Use ```Retrofit``` for fetch data from the internet
 
 - Use ```(Picasso || Glide)``` for thumbnails, I suggest you to use glide instead of Picasso
 
-- Don't write your own HTTP client, use Volley or OkHttp libraries
+- Don't write your own HTTP client, use ```Volley``` or ```OkHttp``` libraries
 
 - Use Fragments to represent a UI screen
 
@@ -105,7 +106,7 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 - Use multiple style files to avoid a single huge one
 
-- Keep your colors.xml short and DRY, just define the palette
+- Keep your ```colors.xml``` short and DRY, just define the palette
 
 - Also keep dimens.xml DRY, define generic constants
 
@@ -113,11 +114,11 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 - Avoid client-side processing for WebViews, and beware of leaks
 
-- Use Robolectric for unit tests, Robotium or Espresso for connected (UI) tests
+- Use ```Robolectric``` for unit tests, ```Robotium or Espresso``` for connected (UI) tests
 
-- Use Genymotion as your emulator || Vysor lets you view and control your Android on your computer Easy peasy. 
+- Use Genymotion as your emulator || ```Vysor``` lets you view and control your Android on your computer Easy peasy. 
 
-- Always use ProGuard or DexGuard
+- Always use ```ProGuard ```or``` DexGuard```
 
-- Use SharedPreferences for simple persistence, otherwise ContentProviders
+- Use ```SharedPreferences``` for simple persistence, otherwise ```ContentProviders```
 

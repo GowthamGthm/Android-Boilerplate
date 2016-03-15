@@ -135,13 +135,10 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 ### Contributor
 
-Author: Abderrazak LAANAYA
+Author: Abderrazak LAANAYA 
+laanayabdrzak@gmail.com
 
-<a href="https://twitter.com/florent_champ">
-  <img alt="Contact me on gmail"
-       src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" />
-</a>
-<a href="https://www.linkedin.com/profile/view?id=297860624">
+<a href="https://www.linkedin.com/in/laanayabdrzak">
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
 </a>

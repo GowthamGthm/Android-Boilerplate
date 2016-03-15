@@ -10,7 +10,7 @@ Libraries and tools included:
 - Palette support
 - [Retrolambda](https://github.com/evant/gradle-retrolambda)
 - [Retrofit2](http://square.github.io/retrofit/)
-- [Picasso](http://square.github.io/picasso/)
+- [Glide](https://github.com/bumptech/glide)
 - [ButterKnife](http://jakewharton.github.io/butterknife/)
 - [Otto](http://square.github.io/otto/)
 

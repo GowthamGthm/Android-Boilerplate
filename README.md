@@ -11,15 +11,15 @@ Libraries and tools included:
 - Retrofit2
 - Butterknife
 
-# Requirements
+## Requirements
 - Android SDK.
 - Android 6.0 (API 23) .
 - Latest Android SDK Tools and build tools.
 
-# Architecture
+## Architecture
 This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here].(http://hannesdorfmann.com/mosby/mvp/)
 
-# Project structure
+## Project structure
 ```
 new-structure
 ├─ library-foobar
@@ -57,4 +57,4 @@ abderrazak.com.recycleviewcardview
    ├─ widgets
    └─ notifications
 ```
-# How to implement a new screen following MVP
+## How to implement a new screen following MVP

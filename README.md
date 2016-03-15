@@ -88,23 +88,23 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 ### Things that experience made me learn the hard way
 
- 1. Think twice before adding any third party library, it’s a really serious commitment
+ 1.  Think twice before adding any third party library, it’s a really serious commitment
 
- 2. Don’t use a database unless you really need to
+ 2.  Don’t use a database unless you really need to
 
- 3. Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you
+ 3.  Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you
 
- 4. RxJava is the best alternative to AsyncTasks and so much more
+ 4.  RxJava is the best alternative to AsyncTasks and so much more
 
- 5. Retrofit is the best networking library there is
+ 5.  Retrofit is the best networking library there is
 
- 6. Shorten your code with Retrolambda
+ 6.  Shorten your code with Retrolambda
 
- 7. Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!
+ 7.  Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!
 
- 8. I use EventBus and it’s great, but I don’t use it too much because the codebase would get really messy
+ 8.  I use EventBus and it’s great, but I don’t use it too much because the codebase would get really messy
 
- 9. Package by Feature, not layers
+ 9.  Package by Feature, not layers
 
  10. Move everything off the application thread
 
@@ -127,8 +127,21 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
  19. Monitor connectivity and type of connection (more data updates while on wifi?)
       
  20. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses
-      
- 21. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
+   
+ 21. Give your methods a clear name for what they are going to do. 
+ 
+ 22. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
 
 
-### TODO
+### Contributor
+
+Author: Abderrazak LAANAYA
+
+<a href="https://twitter.com/florent_champ">
+  <img alt="Contact me on gmail"
+       src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" />
+</a>
+<a href="https://www.linkedin.com/profile/view?id=297860624">
+  <img alt="Follow me on LinkedIn"
+       src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
+</a>

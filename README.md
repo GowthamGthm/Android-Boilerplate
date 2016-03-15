@@ -1,6 +1,6 @@
 # Android Boilerplate
 
-Sample Android app that we use as a reference for new Android projects. It demonstrates the architecture, tools and guidelines that we use when developing for the Android platform:
+Sample Android app that I use as a reference for my new Android projects. It demonstrates the architecture, tools and guidelines that I use when developing for the Android platform:
 
 Libraries and tools included:
 

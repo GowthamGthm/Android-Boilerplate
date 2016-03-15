@@ -6,8 +6,9 @@ Libraries and tools included:
 
 - Support Library
 - Recycleview & Cardview
-- material design support
-- palette support
+- Material design support
+- Retrolambda
+- Palette support
 - Retrofit2
 - Picasso
 - Butterknife

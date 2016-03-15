@@ -12,6 +12,7 @@ Libraries and tools included:
 - [Retrofit2](http://square.github.io/retrofit/)
 - [Picasso](http://square.github.io/picasso/)
 - [ButterKnife](http://jakewharton.github.io/butterknife/)
+- [Otto](http://square.github.io/otto/)
 
 ## Requirements
 - Android SDK.

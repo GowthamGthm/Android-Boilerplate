@@ -62,10 +62,15 @@ abderrazak.com.recycleviewcardview
 Imagine you have to implement a main screen.
 
 1. Create a new package under ui called main.
+
 2. Create an new Activity called MainActivity. You could also use a Fragment.
+
 3. Define the view interface that your Activity is going to implement. Create a new interface called MainView. Add the methods that you think will be necessary, e.g. showDialog()
+
 4. Create a MainPresenterImpl class that implement MainPresenter.Implement the methods in MainPresenter that your Activity requires to perform the necessary actions, e.g. signIn(String email).
+
 5. Create a SignInPresenterTestand write unit tests for signIn(email). Remember to mock the SignInMvpView and also the DataManager.
+
 6. Make your MainActivity implement SignInMvpView and implement the required methods like showDialog()
 In your activity, inject a new instance of MAinPresenter and call presenter = new MainPresenterImpl(this) from onCreate and presenter.onDestroy() from onDestroy(). Also, set up a click listener in your button that calls presenter.sortList().
 

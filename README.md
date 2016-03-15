@@ -72,7 +72,7 @@ Imagine you have to implement a main screen.
 5. Create a SignInPresenterTestand write unit tests for signIn(email). Remember to mock the SignInMvpView and also the DataManager.
 
 6. Make your MainActivity implement SignInMvpView and implement the required methods like showDialog()
-In your activity, inject a new instance of MAinPresenter and call presenter = new MainPresenterImpl(this) from onCreate and presenter.onDestroy() from onDestroy(). Also, set up a click listener in your button that calls presenter.sortList().
+In your activity, inject a new instance of MAinPresenter and call ``` presenter = new MainPresenterImpl(this) ``` from onCreate and ``` presenter.onDestroy() ``` from onDestroy(). Also, set up a click listener in your button that calls presenter.sortList().
 
 ### Some Best practices
 
@@ -82,11 +82,9 @@ In your activity, inject a new instance of MAinPresenter and call presenter = ne
 
 - Use Retrofit for fetch data from the internet
 
-- Use (Picasso || Glide) for thumbnails, I suggest you to use glide instead of Picasso
+- Use ```(Picasso || Glide)``` for thumbnails, I suggest you to use glide instead of Picasso
 
 - Don't write your own HTTP client, use Volley or OkHttp libraries
-
-- Avoid Guava and use only a few libraries due to the 65k method limit
 
 - Use Fragments to represent a UI screen
 

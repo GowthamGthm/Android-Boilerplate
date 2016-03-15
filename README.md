@@ -20,4 +20,22 @@ Libraries and tools included:
 This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here].(http://hannesdorfmann.com/mosby/mvp/)
 
 # Project structure
-
+```
+new-structure
+├─ library-foobar
+├─ app
+│  ├─ libs
+│  ├─ src
+│  │  ├─ androidTest
+│  │  │  └─ java
+│  │  │     └─ com/abderrazak/project
+│  │  └─ main
+│  │     ├─ java
+│  │     │  └─ com/abderrazak/project
+│  │     ├─ res
+│  │     └─ AndroidManifest.xml
+│  ├─ build.gradle
+│  └─ proguard-rules.pro
+├─ build.gradle
+└─ settings.gradle
+```

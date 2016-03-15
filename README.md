@@ -7,11 +7,11 @@ Libraries and tools included:
 - Support Library
 - Recycleview & Cardview
 - Material design support
-- Retrolambda
 - Palette support
-- [Retrofit2]()
-- [Picasso]()
-- [Butterknife]()
+- [Retrolambda](https://github.com/evant/gradle-retrolambda)
+- [Retrofit2](http://square.github.io/retrofit/)
+- [Picasso](http://square.github.io/picasso/)
+- [ButterKnife](http://jakewharton.github.io/butterknife/)
 
 ## Requirements
 - Android SDK.

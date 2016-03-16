@@ -105,62 +105,56 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 ## Things that experience made me learn the hard way
 
- **1.  Think twice before adding any third party library, it’s a really serious commitment**
+ **.  Think twice before adding any third party library, it’s a really serious commitment**
 
- **2.  Don’t use a database unless you really need to**
+ **.  Don’t use a database unless you really need to**
 
- **3.  Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you**
+ **.  Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you**
 
- **4.  RxJava is the best alternative to AsyncTasks and so much more**
+ **.  RxJava is the best alternative to AsyncTasks and so much more**
 
  **5.  Retrofit is the best networking library there is**
 
- **6.  Shorten your code with Retrolambda**
+ **.  Shorten your code with Retrolambda**
 
- **7.  Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!**
+ **.  Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!**
 
- **8.  I use EventBus and it’s great, but I don’t use it too much because the codebase would get really messy**
+ **.  I use event Bus and it’s great, but I don’t use it too much because the codebase would get really messy**
 
- **9.  Package by Feature, not layers**
+ **.  Package by Feature, not layers**
 
- **10. Move everything off the application thread**
+ **. Move everything off the application thread**
 
- **11. lint your views to help you optimize the layouts and layout hierarchies so you can identify redundant views that  could perhaps be removed**
+ **. ```lint``` your views to help you optimize the layouts and layout hierarchies so you can identify redundant views that  could perhaps be removed**
       
- **12. Use Gradle and its recommended project structure**
+ **. Use Gradle and its recommended project structure**
 
- **13. Put passwords and sensitive data in gradle.properties**
+ **. Put passwords and sensitive data in gradle.properties**
       
- **14. Don't write your own HTTP client, use Volley or OkHttp libraries**
+ **. Don't write your own HTTP client, use Volley or OkHttp libraries**
       
- **15. Use styles to avoid duplicate attributes in layout XMLs**
+ **. Use styles to avoid duplicate attributes in layout XMLs**
       
- **16. Do not make a deep hierarchy of ViewGroups**
+ **. Do not make a deep hierarchy of ViewGroups**
       
- **17. Don't write your own HTTP client, use Volley or OkHttp libraries**
+ **. Monitor power source and battery (more data updates while charging? Suspend updates when battery is low?)**
       
- **18. Monitor power source and battery (more data updates while charging? Suspend updates when battery is low?)**
+ **. Monitor connectivity and type of connection (more data updates while on wifi?)**
       
- **19. Monitor connectivity and type of connection (more data updates while on wifi?)**
-      
- **20. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses**
+ **. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses**
    
- **21. Give your methods a clear name for what they are going to do** 
+ **. Give your methods a clear name for what they are going to do** 
  
- **22. The launch screen is a user’s first experience of your application**
+ **. The launch screen is a user’s first experience of your application**
  
- **23. Do not show the launch screen if you don’t have to**
+ **. Do not show the launch screen if you don’t have to**
  
- **24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests**
+ **. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests**
  
- **25. Use event bus to communicate between diffrent part of your application**
+ **. Keep your ```colors.xml``` short and DRY, just define the palette**
  
- **26. Keep your ```colors.xml``` short and DRY, just define the palette**
+ **. Also keep ```dimens.xml``` DRY, define generic constants**
  
- **27. Also keep ```dimens.xml``` DRY, define generic constants**
- 
-
-
 
 ## TODO #1
 

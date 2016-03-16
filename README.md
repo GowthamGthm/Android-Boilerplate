@@ -154,9 +154,20 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
  24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
 
 
-## TODO
+## TODO #1
 
 Project comming soon pushed
+
+## TODO #2
+
+Includ this library :
+
+- RXJAVA / RX Android 
+- Functional tests with Espresso
+- Robolectric
+- Mockito
+- Checkstyle, PMD and Findbugs for code analysis
+
 
 ## Contributor
 ```

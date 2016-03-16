@@ -164,7 +164,7 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 ## TODO #1
 
-Push Project 
+Push Project comming soon
 
 ## TODO #2
 

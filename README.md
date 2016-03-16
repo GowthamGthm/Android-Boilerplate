@@ -147,7 +147,9 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
    
  21. Give your methods a clear name for what they are going to do. 
  
- 22. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
+ 22. The launch screen is a user’s first experience of your application.
+ 
+ 23. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
 
 
 ## Contributor

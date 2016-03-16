@@ -113,7 +113,7 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
  **.  RxJava is the best alternative to AsyncTasks and so much more**
 
- **5.  Retrofit is the best networking library there is**
+ **.  Retrofit is the best networking library there is**
 
  **.  Shorten your code with Retrolambda**
 

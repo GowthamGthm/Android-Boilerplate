@@ -149,7 +149,9 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
  
  22. The launch screen is a user’s first experience of your application.
  
- 23. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
+ 23. Do not show the launch screen if you don’t have to.
+ 
+ 24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
 
 
 ## Contributor

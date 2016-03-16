@@ -127,13 +127,13 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
  **11. lint your views to help you optimize the layouts and layout hierarchies so you can identify redundant views that  could perhaps be removed**
       
- **12. Use Gradle and its recommended project structure **
+ **12. Use Gradle and its recommended project structure**
 
- **13. Put passwords and sensitive data in gradle.properties **
+ **13. Put passwords and sensitive data in gradle.properties**
       
- **14. Don't write your own HTTP client, use Volley or OkHttp libraries **
+ **14. Don't write your own HTTP client, use Volley or OkHttp libraries**
       
- **15. Use styles to avoid duplicate attributes in layout XMLs **
+ **15. Use styles to avoid duplicate attributes in layout XMLs**
       
  **16. Do not make a deep hierarchy of ViewGroups**
       
@@ -153,17 +153,13 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
  
  **24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests**
  
- **25. Use event bus to communicate between diffrent part of your application **
+ **25. Use event bus to communicate between diffrent part of your application**
  
  **26. Keep your ```colors.xml``` short and DRY, just define the palette**
  
  **27. Also keep ```dimens.xml``` DRY, define generic constants**
  
- **28. **
- 
- **29. **
- **30. **
- 
+
 
 
 ## TODO #1

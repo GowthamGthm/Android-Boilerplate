@@ -105,7 +105,7 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 ## Things that experience made me learn the hard way
 
- 1.  Think twice before adding any third party library, it’s a really serious commitment
+ **1.  Think twice before adding any third party library, it’s a really serious commitment**
 
  2.  Don’t use a database unless you really need to
 

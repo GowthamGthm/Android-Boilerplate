@@ -20,7 +20,7 @@ Libraries and tools included:
 - Android 6.0 (API 23) .
 
 ## Architecture
-This project follows Android architecture guidelines that are based on MVP (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
+This project follows Android architecture guidelines that are based on **MVP** (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
 
 <p align="center">
     <img src="http://hannesdorfmann.com/images/mosby/mvp-workflow.png" alt="Screenshots"/>
@@ -107,72 +107,72 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
  **1.  Think twice before adding any third party library, it’s a really serious commitment**
 
- 2.  Don’t use a database unless you really need to
+ **2.  Don’t use a database unless you really need to**
 
- 3.  Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you
+ **3.  Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you**
 
- 4.  RxJava is the best alternative to AsyncTasks and so much more
+ **4.  RxJava is the best alternative to AsyncTasks and so much more**
 
- 5.  Retrofit is the best networking library there is
+ **5.  Retrofit is the best networking library there is**
 
- 6.  Shorten your code with Retrolambda
+ **6.  Shorten your code with Retrolambda**
 
- 7.  Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!
+ **7.  Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!**
 
- 8.  I use EventBus and it’s great, but I don’t use it too much because the codebase would get really messy
+ **8.  I use EventBus and it’s great, but I don’t use it too much because the codebase would get really messy**
 
- 9.  Package by Feature, not layers
+ **9.  Package by Feature, not layers**
 
- 10. Move everything off the application thread
+ **10. Move everything off the application thread**
 
- 11. lint your views to help you optimize the layouts and layout hierarchies so you can identify redundant views that  could perhaps be removed
+ **11. lint your views to help you optimize the layouts and layout hierarchies so you can identify redundant views that  could perhaps be removed**
       
- 12. Use Gradle and its recommended project structure
+ **12. Use Gradle and its recommended project structure**
 
- 13. Put passwords and sensitive data in gradle.properties
+ **13. Put passwords and sensitive data in gradle.properties**
       
- 14. Don't write your own HTTP client, use Volley or OkHttp libraries
+ **14. Don't write your own HTTP client, use Volley or OkHttp libraries**
       
- 15. Use styles to avoid duplicate attributes in layout XMLs
+ **15. Use styles to avoid duplicate attributes in layout XMLs**
       
- 16. Do not make a deep hierarchy of ViewGroups
+ **16. Do not make a deep hierarchy of ViewGroups**
       
- 17. Don't write your own HTTP client, use Volley or OkHttp libraries
+ **17. Don't write your own HTTP client, use Volley or OkHttp libraries**
       
- ####18. Monitor power source and battery (more data updates while charging? Suspend updates when battery is low?)
+ **18. Monitor power source and battery (more data updates while charging? Suspend updates when battery is low?)**
       
- ####19. Monitor connectivity and type of connection (more data updates while on wifi?)
+ **19. Monitor connectivity and type of connection (more data updates while on wifi?)**
       
- ####20. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses
+ **20. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses**
    
- ####21. Give your methods a clear name for what they are going to do. 
+ **21. Give your methods a clear name for what they are going to do.** 
  
- ####22. The launch screen is a user’s first experience of your application.
+ **22. The launch screen is a user’s first experience of your application.**
  
- ####23. Do not show the launch screen if you don’t have to.
+ **23. Do not show the launch screen if you don’t have to.**
  
- ####24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
+ **24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.**
 
 
 ## TODO #1
 
-Project comming soon pushed
+Push Project 
 
 ## TODO #2
 
 Includ this library :
 
-- RXJAVA / RX Android 
-- Functional tests with Espresso
-- Robolectric
-- Mockito
-- Checkstyle, PMD and Findbugs for code analysis
+- **RXJAVA** / **RX Android** 
+- Functional tests with **Espresso**
+- **Robolectric**
+- **Mockito**
+- **Checkstyle**, **PMD** and **Findbugs** for code analysis
 
 
 ## Contributor
-```
-Author: Abderrazak LAANAYA 
-```
+
+ Author: **Abderrazak LAANAYA**
+
 <a href="https://www.linkedin.com/in/laanayabdrzak">
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />

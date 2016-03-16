@@ -72,6 +72,20 @@ abderrazak.com.recycleviewcardview
    ├─ widgets
    └─ callbacks
 ```
+####Gains and Benefits
+
+By looking at the structure you can already tell what the app is all about (figure above);
+- Higher modularity;
+- Easier code navigation;
+- Higher level of abstraction;
+- Separates both features and layers;
+- More readable and maintainable structure;
+- More cohesion;
+- Much easier to scale;
+- Less chance to accidentally modify unrelated classes or files;
+- Much easier to add or remove application features;
+- And much more reusable modules.
+
 ## How to implement a new screen following MVP
 
 Imagine you have to implement a main screen.

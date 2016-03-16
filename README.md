@@ -139,19 +139,19 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
       
  17. Don't write your own HTTP client, use Volley or OkHttp libraries
       
- 18. Monitor power source and battery (more data updates while charging? Suspend updates when battery is low?)
+ ####18. Monitor power source and battery (more data updates while charging? Suspend updates when battery is low?)
       
- 19. Monitor connectivity and type of connection (more data updates while on wifi?)
+ ####19. Monitor connectivity and type of connection (more data updates while on wifi?)
       
- 20. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses
+ ####20. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses
    
- 21. Give your methods a clear name for what they are going to do. 
+ ####21. Give your methods a clear name for what they are going to do. 
  
- 22. The launch screen is a user’s first experience of your application.
+ ####22. The launch screen is a user’s first experience of your application.
  
- 23. Do not show the launch screen if you don’t have to.
+ ####23. Do not show the launch screen if you don’t have to.
  
- 24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
+ ####24. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests.
 
 
 ## TODO #1

@@ -170,14 +170,16 @@ Includ this library :
 - **Mockito**
 - **Checkstyle**, **PMD** and **Findbugs** for code analysis
 
-
-## Contributor
-
+## Developed By
  Author: **Abderrazak LAANAYA**
 
 <a href="https://www.linkedin.com/in/laanayabdrzak">
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
 </a>
+## Contributions
+ Any contributions are welcome! :smile:
+
+
 
 

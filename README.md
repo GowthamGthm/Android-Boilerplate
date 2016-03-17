@@ -164,7 +164,12 @@ Push Project comming soon
 Includ this library :
 
 - [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
+- [FAB Progress](https://github.com/JorgeCastilloPrz/FABProgressCircle)
 - [Material Preference](https://github.com/consp1racy/android-support-preference)
+- [Retainable Tasks](https://github.com/NeoTech-Software/Android-Retainable-Tasks)
+- [material intro](https://github.com/HeinrichReimer/material-intro)
+- [ MaterialShowcaseView](https://github.com/deano2390/MaterialShowcaseView)
+- [Boot Animation](https://github.com/Cleveroad/CRAndroidMBootAnimationView)
 - **RXJAVA** / **RX Android** 
 - Functional tests with **Espresso**
 - **Robolectric**

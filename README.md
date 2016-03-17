@@ -177,6 +177,8 @@ Includ this library :
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
 </a>
+## Contributors
+[laanayabdrzak](https://github.com/laanayabdrzak)
 ## Contributions
  Any contributions are welcome! :smile:
 

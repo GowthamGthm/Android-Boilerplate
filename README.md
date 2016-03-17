@@ -11,7 +11,7 @@ Libraries and tools included:
 - [Support annotations](http://tools.android.com/tech-docs/support-annotations)
 - [Retrolambda](https://github.com/evant/gradle-retrolambda)
 - [Retrofit2](http://square.github.io/retrofit/)
-- [Glide](https://github.com/bumptech/glide)/ [Picasso](http://square.github.io/picasso/)
+- [Glide](https://github.com/bumptech/glide)  OR  [Picasso](http://square.github.io/picasso/)
 - [ButterKnife](http://jakewharton.github.io/butterknife/)
 - [Otto](http://square.github.io/otto/)
 

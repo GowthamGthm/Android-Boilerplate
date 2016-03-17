@@ -163,6 +163,7 @@ Push Project comming soon
 ## TODO #2
 Includ this library :
 
+- [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
 - **Material Preference**
 - **RXJAVA** / **RX Android** 
 - Functional tests with **Espresso**

@@ -164,7 +164,7 @@ Push Project comming soon
 Includ this library :
 
 - [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
-- **Material Preference**
+- [Material Preference](https://github.com/consp1racy/android-support-preference)
 - **RXJAVA** / **RX Android** 
 - Functional tests with **Espresso**
 - **Robolectric**

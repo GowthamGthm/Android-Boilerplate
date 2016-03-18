@@ -13,7 +13,7 @@ Sample Android app that I use as a reference for my new Android projects. It dem
 - [Retrofit2](http://square.github.io/retrofit/)
 - [Glide](https://github.com/bumptech/glide)  OR  [Picasso](http://square.github.io/picasso/)
 - [ButterKnife](http://jakewharton.github.io/butterknife/)
-- [Otto](http://square.github.io/otto/)
+- [Otto](http://square.github.io/otto/) event bus
 
 ## Requirements
 - [Latest Android SDK Tools and build tools](http://developer.android.com/sdk/index.html).

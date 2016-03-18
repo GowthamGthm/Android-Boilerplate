@@ -19,6 +19,17 @@ Sample Android app that I use as a reference for my new Android projects. It dem
 - [Latest Android SDK Tools and build tools](http://developer.android.com/sdk/index.html).
 - Android 6.0 (API 23) .
 
+## Good Architecture
+```
+ Clean Architecture is :
+        Independent of UI
+        Independent of Frameworks
+        Independent of any agency externe 
+        Independent of Database
+        Testable
+        
+Read more about them [here](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+```
 ## Architecture
 This project follows Android architecture guidelines that are based on **MVP** (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
 

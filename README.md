@@ -2,7 +2,7 @@
 
 Sample Android app that I use as a reference for my new Android projects. It demonstrates the architecture, tools and guidelines that I use when developing for the Android platform:
 
-Libraries and tools included:
+##Third Party Libraries & tools included
 
 - Support Library
 - [Recycleview & Cardview](http://developer.android.com/training/material/lists-cards.html)
@@ -103,7 +103,7 @@ Imagine you have to implement a main screen.
 6. Make your MainActivity implement SignInMvpView and implement the required methods like showDialog()
 In your activity, inject a new instance of MAinPresenter and call ``` presenter = new MainPresenterImpl(this) ``` from onCreate and ``` presenter.onDestroy() ``` from onDestroy(). Also, set up a click listener in your button that calls presenter.sortList().
 
-## Things that experience made me learn the hard way
+## Some of best practices
 
  **.  Think twice before adding any third party library, it’s a really serious commitment**
 
@@ -164,12 +164,20 @@ Push Project comming soon
 Includ this library :
 
 - [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
+- [FAB menu](https://github.com/yavski/fab-speed-dial)
+- [FAB toolbar](https://github.com/bowyer-app/fab-toolbar)
+- [FAB transition](https://github.com/bowyer-app/FabTransitionLayout)
+- [Material spinner](https://github.com/jaredrummler/Material-Spinner)
+- [CircularImageView](https://github.com/lopspower/CircularImageView)
+- [Drag Recycle](https://github.com/AleBarreto/DragRecyclerView)
+- [Parallax Recycleview](https://github.com/yayaa/ParallaxRecyclerView)
 - [FAB Progress](https://github.com/JorgeCastilloPrz/FABProgressCircle)
 - [Material Preference](https://github.com/consp1racy/android-support-preference)
 - [Retainable Tasks](https://github.com/NeoTech-Software/Android-Retainable-Tasks)
 - [material intro](https://github.com/HeinrichReimer/material-intro)
 - [ MaterialShowcaseView](https://github.com/deano2390/MaterialShowcaseView)
 - [Boot Animation](https://github.com/Cleveroad/CRAndroidMBootAnimationView)
+- [Sharing using NFC](http://developer.android.com/training/beam-files/index.html)
 - **RXJAVA** / **RX Android** 
 - Functional tests with **Espresso**
 - **Robolectric**

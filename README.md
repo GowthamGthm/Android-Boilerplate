@@ -2,7 +2,7 @@
 
 Sample Android app that I use as a reference for my new Android projects. It demonstrates the architecture, tools and guidelines that I use when developing for the Android platform:
 
-             [![CodePath](http://i.imgur.com/XgxWfyF.png)](http://codepath.com)
+  [![CodePath](http://i.imgur.com/XgxWfyF.png)](http://codepath.com)
 ##Third Party Libraries & tools included
 
 - Support Library

@@ -2,6 +2,7 @@
 
 Sample Android app that I use as a reference for my new Android projects. It demonstrates the architecture, tools and guidelines that I use when developing for the Android platform:
 
+   [![CodePath](http://i.imgur.com/XgxWfyF.png)](http://codepath.com)
 ##Third Party Libraries & tools included
 
 - Support Library
@@ -164,6 +165,15 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
  **. Keep your ```colors.xml``` short and DRY, just define the palette**
  
  **. Also keep ```dimens.xml``` DRY, define generic constants**
+ 
+ **. In reality ```perfExternal```  is rarely used as an application on the external storage is stopped once the device is connected to a computer and mounted as USB storage**
+ 
+ **. Use StringBuffer or Stringbuilder classes when there is a lot of modifications to string of characters**
+ 
+ **. Drain battery is 30% (image, animation, ...) and 70% (Analytics, ads, maps, gps)**
+ 
+ 
+ 
  
 
 ## TODO #1

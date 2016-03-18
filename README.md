@@ -172,6 +172,8 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
  
  **. Drain battery is 30% (image, animation, ...) and 70% (Analytics, ads, maps, gps)**
  
+ **. Avoid using splash screen, if it's necessary use launch screen**
+ 
  
  
  

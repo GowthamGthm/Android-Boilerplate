@@ -165,6 +165,7 @@ Includ this library :
 
 - [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
 - [FAB menu](https://github.com/yavski/fab-speed-dial)
+- [custom snakbar](https://github.com/MrEngineer13/SnackBar)
 - [FAB toolbar](https://github.com/bowyer-app/fab-toolbar)
 - [FAB transition](https://github.com/bowyer-app/FabTransitionLayout)
 - [Material spinner](https://github.com/jaredrummler/Material-Spinner)

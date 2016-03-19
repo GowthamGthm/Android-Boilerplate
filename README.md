@@ -189,7 +189,7 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 Push Project comming soon
 
 ## TODO #2
-Includ this library :
+Include those libraries :
 
 - [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
 - [FAB menu](https://github.com/yavski/fab-speed-dial)

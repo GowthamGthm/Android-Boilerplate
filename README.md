@@ -99,9 +99,9 @@ By looking at the structure you can already tell what the app is all about (figu
 
 ## How to implement a new screen following MVP
 
-Imagine you have to implement a main screen.
+Imagine you have to implement a **main** screen.
 
-1. Create a new package under ```ui``` called main.
+1. Create a new package under ```ui``` called **main**.
 
 2. Create an new Activity called ```MainActivity```. You could also use a Fragment.
 

@@ -97,6 +97,12 @@ By looking at the structure you can already tell what the app is all about (figu
 - Much easier to add or remove application features;
 - And much more reusable modules.
 
+
+## Project & code guidelines 
+
+check [this](https://github.com/laanayabdrzak/android-guidelines/blob/master/project_and_code_guidelines.md)
+
+
 ## How to implement a new screen following MVP
 
 Imagine you have to implement a **main** screen.

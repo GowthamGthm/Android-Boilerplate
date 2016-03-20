@@ -3,7 +3,7 @@
 Sample Android app that I use as a reference for my new Android projects. It demonstrates the architecture, tools and guidelines that I use when developing for the Android platform:
 
  <p align="center">
-    <img src="http://i.imgur.com/XgxWfyF.png" alt="Screenshots"/>
+    <img src="https://github.com/laanayabdrzak/Android-Boilerplate/blob/master/boilerplate_arch.png" alt="Screenshots"/>
 </p>
 
 ##Third Party Libraries & tools included

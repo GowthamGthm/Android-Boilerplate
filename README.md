@@ -2,9 +2,7 @@
 
 Sample Android app that I use as a reference for my new Android projects. It demonstrates the architecture, tools and guidelines that I use when developing for the Android platform:
 
- <p align="center">
-    <img src="https://github.com/laanayabdrzak/Android-Boilerplate/blob/master/boilerplate_arch.png" alt="Screenshots"/>
-</p>
+
 
 ##Third Party Libraries & tools included
 
@@ -39,7 +37,7 @@ Read more [here](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-archit
 This project follows Android architecture guidelines that are based on **MVP** (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
 
 <p align="center">
-    <img src="http://hannesdorfmann.com/images/mosby/mvp-workflow.png" alt="Screenshots"/>
+    <img src="https://github.com/laanayabdrzak/Android-Boilerplate/blob/master/boilerplate_arch.png" alt="Screenshots"/>
 </p>
 
 ## Project structure

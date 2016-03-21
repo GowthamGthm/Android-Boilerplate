@@ -13,7 +13,7 @@ Sample Android app that I use as a reference for my new Android projects. It dem
 - [Support annotations](http://tools.android.com/tech-docs/support-annotations)
 - [Retrolambda](https://github.com/evant/gradle-retrolambda)
 - [Retrofit2](http://square.github.io/retrofit/)
-- [Glide](https://github.com/bumptech/glide)  OR  [Picasso](http://square.github.io/picasso/)
+- [Glide](https://github.com/bumptech/glide)  or  [Picasso](http://square.github.io/picasso/)
 - [ButterKnife](http://jakewharton.github.io/butterknife/)
 - [Otto](http://square.github.io/otto/) event bus
 
@@ -223,8 +223,7 @@ Include those libraries :
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
 </a>
-## Contributors
-[laanayabdrzak](https://github.com/laanayabdrzak)
+
 ## Contributions
  Any contributions are welcome! :smile:
 

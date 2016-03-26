@@ -12,6 +12,7 @@ Sample Android app that I use as a reference for my new Android projects. It dem
 - [Android Transition Framework](https://developer.android.com/training/transitions/overview.html)
 - [Palette support](http://developer.android.com/reference/android/support/v7/graphics/Palette.html)
 - [Support annotations](http://tools.android.com/tech-docs/support-annotations)
+- [RxJava/ RxAndroid](https://github.com/ReactiveX/RxAndroid)
 - [Retrolambda](https://github.com/evant/gradle-retrolambda)
 - [Retrofit2](http://square.github.io/retrofit/)
 - [Glide](https://github.com/bumptech/glide)  or  [Picasso](http://square.github.io/picasso/)
@@ -24,7 +25,7 @@ Sample Android app that I use as a reference for my new Android projects. It dem
 
 ## Good Architecture
 
-- Clean Architecture is :
+- Clean **Architecture** is :
   - Independent of UI
   - Independent of Frameworks
   - Independent of any agency externe 
@@ -72,10 +73,6 @@ abderrazak.com.recycleviewcardview
 │   ├─ local
 │   ├─ model
 │   ├─ remote
-├─ network
-│   ├─ callbacks
-│   ├─ services
-│   ├─ tasks
 ├─ managers
 ├─ ui
 │   ├─ main
@@ -84,8 +81,7 @@ abderrazak.com.recycleviewcardview
 ├─ util
 └─ views
    ├─ adapters
-   ├─ widgets
-   └─ callbacks
+   └─ widgets
 ```
 ####Gains and Benefits
 
@@ -126,66 +122,7 @@ In your activity, inject a new instance of MAinPresenter and call ``` presenter 
 
 ## Some of best practices
 
- **.  Think twice before adding any third party library, it’s a really serious commitment**
-
- **.  Don’t use a database unless you really need to**
-
- **.  Hitting the 65k method count mark is gonna happen fast, I mean really fast! And multidexing can save you**
-
- **.  RxJava is the best alternative to AsyncTasks and so much more**
-
- **.  Retrofit is the best networking library there is**
-
- **.  Shorten your code with Retrolambda**
-
- **.  Combine RxJava with Retrofit and Retrolambda for maximum awesomeness!**
-
- **.  I use event Bus and it’s great, but I don’t use it too much because the codebase would get really messy**
-
- **.  Package by Feature, not layers**
-
- **. Move everything off the application thread**
-
- **. ```lint``` your views to help you optimize the layouts and layout hierarchies so you can identify redundant views that  could perhaps be removed**
-      
- **. Use Gradle and its recommended project structure**
-
- **. Put passwords and sensitive data in gradle.properties**
-      
- **. Don't write your own HTTP client, use Volley or OkHttp libraries**
-      
- **. Use styles to avoid duplicate attributes in layout XMLs**
-      
- **. Do not make a deep hierarchy of ViewGroups**
-      
- **. Monitor power source and battery (more data updates while charging? Suspend updates when battery is low?)**
-      
- **. Monitor connectivity and type of connection (more data updates while on wifi?)**
-      
- **. Use the [Account Manager](http://developer.android.com/reference/android/accounts/AccountManager.html) to suggest login usernames and email addresses**
-   
- **. Give your methods a clear name for what they are going to do** 
- 
- **. The launch screen is a user’s first experience of your application**
- 
- **. Do not show the launch screen if you don’t have to**
- 
- **. Tests are great for performance: Write slow (but correct) implementation then verify optimizations don’t break anything with tests**
- 
- **. Keep your ```colors.xml``` short and DRY, just define the palette**
- 
- **. Also keep ```dimens.xml``` DRY, define generic constants**
- 
- **. In reality ```perfExternal```  is rarely used as an application on the external storage is stopped once the device is connected to a computer and mounted as USB storage**
- 
- **. Use StringBuffer or Stringbuilder classes when there is a lot of modifications to string of characters**
- 
- **. Drain battery is 30% (image, animation, ...) and 70% (Analytics, ads, maps, gps)**
- 
- **. Avoid using splash screen, if it's necessary use launch screen**
- 
- 
- 
+Check my post [here](https://medium.com/@laanayabdrzak/android-development-some-of-the-best-practices-27722c685b6a#.ctm7ophba)
  
 
 ## TODO #1
@@ -211,7 +148,6 @@ Include those libraries :
 - [ MaterialShowcaseView](https://github.com/deano2390/MaterialShowcaseView)
 - [Boot Animation](https://github.com/Cleveroad/CRAndroidMBootAnimationView)
 - [Sharing using NFC](http://developer.android.com/training/beam-files/index.html)
-- **RXJAVA** / **RX Android** 
 - Functional tests with **Espresso**
 - **Robolectric**
 - **Mockito**

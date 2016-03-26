@@ -72,17 +72,20 @@ abderrazak.com.recycleviewcardview
 ├─ data
 │   ├─ local
 │   ├─ model
-│   ├─ remote
-├─ managers
+│   └─ remote
+├─ injection
+│   ├─ component
+│   └─ module
 ├─ ui
 │   ├─ main
 │   ├─ detail
-│   ├─ etc..
+│   └─ etc..
 ├─ util
 └─ views
-   ├─ adapters
-   └─ widgets
+    ├─ adapters
+    └─ widgets
 ```
+
 ####Gains and Benefits
 
 By looking at the structure you can already tell what the app is all about (figure above);

@@ -14,6 +14,7 @@ Sample Android app that I use as a reference for my new Android projects. It dem
 - [Support annotations](http://tools.android.com/tech-docs/support-annotations)
 - [RxJava/ RxAndroid](https://github.com/ReactiveX/RxAndroid)
 - [Retrolambda](https://github.com/evant/gradle-retrolambda)
+- [Dagger 2](http://google.github.io/dagger/)
 - [Retrofit2](http://square.github.io/retrofit/)
 - [Glide](https://github.com/bumptech/glide)  or  [Picasso](http://square.github.io/picasso/)
 - [ButterKnife](http://jakewharton.github.io/butterknife/)

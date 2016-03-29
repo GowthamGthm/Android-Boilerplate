@@ -1,5 +1,7 @@
 # Android Boilerplate
 
+[![Build Status](https://travis-ci.org/laanayabdrzak/Android-Boilerplate.svg?branch=master)](https://travis-ci.org/laanayabdrzak/Android-Boilerplate)
+
 Sample Android app that I use as a reference for my new Android projects. It demonstrates the architecture, tools and guidelines that I use when developing for the Android platform:
 
 

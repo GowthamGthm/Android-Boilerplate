@@ -2,6 +2,7 @@ ext {
     // Version
     supportLibraryVersion = '23.2.0'
     retrofitVersion = '2.0.0'
+    daggerVersion = '2.0.2'
 
     //Support Libraries dependencies
     dependencies = [
@@ -16,6 +17,7 @@ ext {
             retrofitConverterGson   : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
             retrofitAdapterRxJava   : "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion",
             rxAndroid               : 'io.reactivex:rxandroid:1.0.1',
+            rxJava                  : 'io.reactivex:rxjava:1.1.0',
             palette                 : 'com.android.support:palette-v7:23.1.1',
             picasso                 : 'com.squareup.picasso:picasso:2.5.2',
             glide                   : 'com.github.bumptech.glide:glide:3.6.0',
@@ -25,7 +27,10 @@ ext {
             jUnit                   : 'junit:junit:4.12',
             mockito                 : 'org.mockito:mockito-core:1.10.19',
             robolectric             : 'org.robolectric:robolectric:3.0',
-            crashlytics             : 'com.crashlytics.sdk.android:crashlytics:2.5.5@aar'
+            crashlytics             : 'com.crashlytics.sdk.android:crashlytics:2.5.5@aar',
+            dagger                  : "com.google.dagger:dagger:$daggerVersion",
+            annotationDagger        : 'org.glassfish:javax.annotation:10.0-b28', // Required by Dagger 2
+            daggerCompiler          : "com.google.dagger:dagger-compiler:$daggerVersion"
 
     ]
 }

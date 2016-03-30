@@ -20,10 +20,42 @@ android {
         versionName "1.0"
     }
 
+    signingConfigs {
+        // You must set up an environment var before release signing
+        // Run: export APP_KEY={password}
+        // TODO Add your release keystore in /keystore folder
+        release {
+            storeFile file('keystore/release.keystore')
+            keyAlias 'alias'
+            storePassword "$System.env.APP_KEY"
+            keyPassword "$System.env.APP_KEY"
+        }
+        // It's not necessary to specify, but I like to keep the debug keystore
+        // in SC so all our debug builds (on all workstations) use the same
+        // key for convenience
+
+        debug {
+            storeFile file('keystore/debug.keystore')
+            keyAlias 'androiddebugkey'
+            storePassword 'android'
+            keyPassword 'android'
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+
+        debug {
+            /* This one happens automatically*/
+            //signingConfig signingConfigs.debug
+
+            versionNameSuffix " Debug"
+            debuggable true
         }
     }
 
@@ -49,6 +81,7 @@ dependencies {
     compile dependencies.retrofit
     compile dependencies.retrofitConverterGson
     compile dependencies.retrofitAdapterRxJava
+    compile dependencies.rxJava
     compile dependencies.rxAndroid
     compile dependencies.picasso
     compile dependencies.support

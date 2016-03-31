@@ -40,9 +40,6 @@ Read more [here](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-archit
 
 This project follows Android architecture guidelines that are based on **MVP** (Model View Presenter). Read more about them [here](http://www.tinmegali.com/en/model-view-presenter-android-part-1/).
 
-<p align="center">
-    <img src="https://github.com/laanayabdrzak/Android-Boilerplate/blob/master/boilerplate_arch.png" alt="Screenshots"/>
-</p>
 
 ## Project structure
 ```
@@ -75,9 +72,7 @@ abderrazak.com.recycleviewcardview
 │   ├─ local
 │   ├─ model
 │   └─ remote
-├─ injection
-│   ├─ component
-│   └─ module
+├─ service
 ├─ ui
 │   ├─ main
 │   ├─ detail

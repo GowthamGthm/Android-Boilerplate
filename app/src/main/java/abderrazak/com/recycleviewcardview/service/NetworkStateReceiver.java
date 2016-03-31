@@ -1,4 +1,4 @@
-package abderrazak.com.recycleviewcardview.manager;
+package abderrazak.com.recycleviewcardview.service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

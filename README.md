@@ -132,7 +132,9 @@ Check my post [here](https://medium.com/@laanayabdrzak/android-development-some-
 
 ## TODO #1
 
-Push Project comming soon
+- Implement SQlBrite
+- Add Paralax to thumbnail (Parallax Recycleview)
+
 
 ## TODO #2
 Include those libraries :
@@ -166,8 +168,6 @@ Include those libraries :
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
 </a>
 
-## Contributions
- Any contributions are welcome! :smile:
 
 
 

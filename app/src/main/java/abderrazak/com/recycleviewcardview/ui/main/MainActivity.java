@@ -27,6 +27,7 @@ import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -50,7 +51,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, MainMvpView{
 
-
+    private static final String EXTRA_TRIGGER_SYNC_FLAG = "abderrazak.com.recycleviewcardview.ui.main.MainActivity.EXTRA_TRIGGER_SYNC_FLAG";
     private static final int ANIM_DURATION_TOOLBAR = 300;
     private static final int ANIM_DURATION_FAB = 400;
 
@@ -71,6 +72,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     FloatingActionButton fab1;
     @Bind(R.id.fab2)
     FloatingActionButton fab2;
+    @Bind(R.id.fab3)
+    FloatingActionButton fab3;
+    @Bind(R.id.fab4)
+    FloatingActionButton fab4;
     private RVAdapter adapter;
     private ProgressDialog pDialog;
     private MainPresenter presenter;
@@ -79,7 +84,22 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private TextView titleApp;
     private Boolean isFabOpen = false;
     private Animation fabOpen,fabClose,rotateForward,rotateBackward;
+    private Animation show_fab_1, hide_fab_1, show_fab_2, hide_fab_2, show_fab_3, hide_fab_3;
+    //Save the FAB's active status
+    //false -> fab = close
+    //true -> fab = open
+    private boolean FAB_Status = false;
 
+    /**
+     * Return an Intent to start this Activity.
+     * triggerDataSyncOnCreate allows disabling the background sync service onCreate. Should
+     * only be set to false during testing.
+     */
+    public static Intent getStartIntent(Context context, boolean triggerDataSyncOnCreate) {
+        Intent intent = new Intent(context, MainActivity.class);
+        intent.putExtra(EXTRA_TRIGGER_SYNC_FLAG, triggerDataSyncOnCreate);
+        return intent;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +114,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         }
         presenter.initiateViews();
         presenter.loadMovies();
-
+        /*if (getIntent().getBooleanExtra(EXTRA_TRIGGER_SYNC_FLAG, true)) {
+            Timber.i("Service gonna start..");
+            startService(SyncService.getStartIntent(this));
+        }*/
 
     }
 
@@ -124,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
         searchView.setOnQueryTextListener(this);
         searchView.setOnCloseListener(() -> {
-            if (adapter.getItemCount() == 0) presenter.loadDataFromCache();
+            if (adapter.getItemCount() == 0) presenter.loadMovies();
             return false;
         });
         if (pendingIntroAnimation) {
@@ -248,8 +271,26 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         rotateForward = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_forward);
         rotateBackward = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
 
+        //Animations Custom
+        show_fab_1 = AnimationUtils.loadAnimation(getApplication(), R.anim.fab1_show);
+        hide_fab_1 = AnimationUtils.loadAnimation(getApplication(), R.anim.fab1_hide);
+        show_fab_2 = AnimationUtils.loadAnimation(getApplication(), R.anim.fab2_show);
+        hide_fab_2 = AnimationUtils.loadAnimation(getApplication(), R.anim.fab2_hide);
+        show_fab_3 = AnimationUtils.loadAnimation(getApplication(), R.anim.fab3_show);
+        hide_fab_3 = AnimationUtils.loadAnimation(getApplication(), R.anim.fab3_hide);
+
         // listener floatActionBar
-        fab.setOnClickListener(v -> presenter.animateFAB());
+        fab.setOnClickListener(v -> {
+            if (FAB_Status == false) {
+                //Display FAB menu
+                expandFAB();
+                FAB_Status = true;
+            } else {
+                //Close FAB menu
+                hideFAB();
+                FAB_Status = false;
+            }
+        });
 
     }
 
@@ -260,8 +301,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             fab.startAnimation(rotateBackward);
             fab1.startAnimation(fabClose);
             fab2.startAnimation(fabClose);
+            fab3.startAnimation(fabClose);
+            fab4.startAnimation(fabClose);
             fab1.setClickable(false);
             fab2.setClickable(false);
+            fab3.setClickable(false);
+            fab4.setClickable(false);
             isFabOpen = false;
 
         } else {
@@ -269,17 +314,83 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             fab.startAnimation(rotateForward);
             fab1.startAnimation(fabOpen);
             fab2.startAnimation(fabOpen);
+            fab3.startAnimation(fabOpen);
+            fab4.startAnimation(fabOpen);
             fab1.setClickable(true);
             fab2.setClickable(true);
+            fab3.setClickable(true);
+            fab4.setClickable(true);
             isFabOpen = true;
 
         }
+    }
+
+    private void expandFAB() {
+
+        //Floating Action Button 1
+        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) fab1.getLayoutParams();
+        layoutParams.rightMargin += (int) (fab1.getWidth() * 1.7);
+        layoutParams.bottomMargin += (int) (fab1.getHeight() * 0.25);
+        fab1.setLayoutParams(layoutParams);
+        fab1.startAnimation(show_fab_1);
+        fab1.setClickable(true);
+
+        //Floating Action Button 2
+        FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) fab2.getLayoutParams();
+        layoutParams2.rightMargin += (int) (fab2.getWidth() * 1.5);
+        layoutParams2.bottomMargin += (int) (fab2.getHeight() * 1.5);
+        fab2.setLayoutParams(layoutParams2);
+        fab2.startAnimation(show_fab_2);
+        fab2.setClickable(true);
+
+        //Floating Action Button 3
+        FrameLayout.LayoutParams layoutParams3 = (FrameLayout.LayoutParams) fab3.getLayoutParams();
+        layoutParams3.rightMargin += (int) (fab3.getWidth() * 0.25);
+        layoutParams3.bottomMargin += (int) (fab3.getHeight() * 1.7);
+        fab3.setLayoutParams(layoutParams3);
+        fab3.startAnimation(show_fab_3);
+        fab3.setClickable(true);
+    }
+
+
+    private void hideFAB() {
+
+        //Floating Action Button 1
+        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) fab1.getLayoutParams();
+        layoutParams.rightMargin -= (int) (fab1.getWidth() * 1.7);
+        layoutParams.bottomMargin -= (int) (fab1.getHeight() * 0.25);
+        fab1.setLayoutParams(layoutParams);
+        fab1.startAnimation(hide_fab_1);
+        fab1.setClickable(false);
+
+        //Floating Action Button 2
+        FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) fab2.getLayoutParams();
+        layoutParams2.rightMargin -= (int) (fab2.getWidth() * 1.5);
+        layoutParams2.bottomMargin -= (int) (fab2.getHeight() * 1.5);
+        fab2.setLayoutParams(layoutParams2);
+        fab2.startAnimation(hide_fab_2);
+        fab2.setClickable(false);
+
+        //Floating Action Button 3
+        FrameLayout.LayoutParams layoutParams3 = (FrameLayout.LayoutParams) fab3.getLayoutParams();
+        layoutParams3.rightMargin -= (int) (fab3.getWidth() * 0.25);
+        layoutParams3.bottomMargin -= (int) (fab3.getHeight() * 1.7);
+        fab3.setLayoutParams(layoutParams3);
+        fab3.startAnimation(hide_fab_3);
+        fab3.setClickable(false);
     }
 
     @Override
     public void setItems(List<Movie> movieItems) {
         adapter = new RVAdapter(MainActivity.this, movieItems);
         rv.setAdapter(adapter);
+        rv.setOnTouchListener((v, event) -> {
+            if (FAB_Status) {
+                hideFAB();
+                FAB_Status = false;
+            }
+            return false;
+        });
         /**
             AlphaInRVAnimationAdapter alphaInAnimationAdapter =  new AlphaInRVAnimationAdapter(adapter);
             alphaInAnimationAdapter.setRecyclerView(rv);

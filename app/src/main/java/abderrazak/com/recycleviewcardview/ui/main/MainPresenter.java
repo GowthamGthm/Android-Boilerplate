@@ -53,6 +53,7 @@ public class MainPresenter implements Presenter<MainMvpView> {
         mainMvpView.showSnack(message);
     }
 
+    /** Filter without RxJava **/
     public List<Movie> filter(String query) {
         query = query.toLowerCase();
 
@@ -121,27 +122,30 @@ public class MainPresenter implements Presenter<MainMvpView> {
                                             MainPresenter.this.movieArrayList = movies;
                                         }
                                     });
+        /** USE SyncService **/
+        /*subscription = mDataManager.getMoviesFromDB()
+                                   .observeOn(AndroidSchedulers.mainThread())
+                                   .subscribeOn(Schedulers.io())
+                                   .subscribe(new Subscriber<List<Movie>>() {
+                                        @Override
+                                        public void onCompleted() {
+                                            if (!movieArrayList.isEmpty()) mainMvpView.setItems(movieArrayList);
+                                            else mainMvpView.showSnack("Oops! Empty list movies");
+                                            mainMvpView.hideDialog();
+                                        }
+
+                                        @Override
+                                        public void onError(Throwable e) {
+                                            mainMvpView.hideDialog();
+                                            if (NetworkUtil.isHttpStatusCode(e, 404)) mainMvpView.showSnack("Oops! error 404");
+                                            else mainMvpView.showSnack("Oops! something went wrong");
+                                        }
+
+                                        @Override
+                                        public void onNext(List<Movie> movies) {
+                                            MainPresenter.this.movieArrayList = movies;
+                                        }
+                                   });*/
     }
-
-    public void loadDataFromCache() {
-        mDataManager.syncDataToCache().subscribe(new Subscriber<List<Movie>>() {
-            @Override
-            public void onCompleted() {
-                if (!movieArrayList.isEmpty()) mainMvpView.setItems(movieArrayList);
-                else mainMvpView.showSnack("Oops! no data in cache");
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                mainMvpView.showSnack("Oops! something went wrong");
-            }
-
-            @Override
-            public void onNext(List<Movie> movies) {
-                MainPresenter.this.movieArrayList = movies;
-            }
-        });
-    }
-
 
 }

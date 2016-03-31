@@ -1,11 +1,14 @@
 package abderrazak.com.recycleviewcardview.data.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 
 /**
  * Created by abderrazak on 07/03/2016.
  */
-public class Movie {
+public class Movie implements Parcelable{
 
     private String title, image;
     private int releaseYear;
@@ -21,6 +24,30 @@ public class Movie {
         this.releaseYear = releaseYear;
         this.rating = rating;
         this.genre = genre;
+    }
+
+    public Movie(Parcel in) {
+        title = in.readString();
+        image = in.readString();
+        releaseYear = in.readInt();
+        rating = in.readDouble();
+        genre = in.createStringArrayList();
+    }
+
+    public static final Creator<Movie> CREATOR = new Creator<Movie>() {
+        @Override
+        public Movie createFromParcel(Parcel in) { return new Movie(in); }
+
+        @Override
+        public Movie[] newArray(int size) { return new Movie[size]; }
+    };
+
+    public Movie(Movie movie){
+        this.title = movie.getTitle();
+        this.image = movie.getThumbnailUrl();
+        this.releaseYear = movie.getYear();
+        this.genre = movie.getGenre();
+        this.rating = movie.getRating();
     }
 
     public String getTitle() {
@@ -72,5 +99,19 @@ public class Movie {
                 ", rating=" + rating +
                 ", genre=" + genre +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.getTitle());
+        dest.writeString(this.getThumbnailUrl());
+        dest.writeDouble(this.getRating());
+        dest.writeInt(this.getYear());
+        dest.writeArray(this.getGenre().toArray());
     }
 }

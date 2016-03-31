@@ -58,7 +58,6 @@
             <ImageView
                 android:id="@+id/thumbnail"
                 android:layout_width="fill_parent"
-                android:transitionName="@string/image_shared_transition"
                 android:scaleType="centerCrop"
                 android:layout_height="180dp" />
 

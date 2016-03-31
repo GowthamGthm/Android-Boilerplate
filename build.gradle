@@ -3,13 +3,12 @@ apply from: 'dependencies.gradle'
 buildscript {
     repositories {
         jcenter()
-    }
-    repositories {
         maven { url 'https://maven.fabric.io/public' }
     }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:2.0.0-beta6'
-        classpath 'me.tatarka:gradle-retrolambda:2.5.0'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
 
         // The Fabric Gradle plugin uses an open ended version to react
         // quickly to Android tooling updates
@@ -22,12 +21,7 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven { url 'https://maven.fabric.io/public' }
     }
 }
 
-ext {
-    androidCompileSdkVersion = 23
-    androidBuildToolsVersion = '23.0.2'
-    androidMinSdkVersion = 15
-    androidTargetSdkVersion = 23
-}

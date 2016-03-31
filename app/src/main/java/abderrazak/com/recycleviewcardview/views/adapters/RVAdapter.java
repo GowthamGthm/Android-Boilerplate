@@ -15,6 +15,7 @@ import java.util.List;
 
 import abderrazak.com.recycleviewcardview.R;
 import abderrazak.com.recycleviewcardview.data.model.Movie;
+import abderrazak.com.recycleviewcardview.util.ArraysUtil;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import timber.log.Timber;
@@ -146,15 +147,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
             title.setText(movie.getTitle());
             rating.setText("Rating: " + String.valueOf(movie.getRating()));
             if (movie.getGenre() != null) {
-                String genreStr = "";
-                for (String str: movie.getGenre()) {
-                    genreStr += str + ", ";
-                }
-                genreStr = genreStr.length() > 0 ? genreStr.substring(0, genreStr.length() - 2) : genreStr;
-                genre.setText("Genre: "+ genreStr);
+                genre.setText("Genre: "+ ArraysUtil.convertArrayListToString(movie.getGenre()));
             }
             releaseYear.setText(String.valueOf(movie.getYear()));
-
         }
 
     }

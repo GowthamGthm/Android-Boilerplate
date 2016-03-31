@@ -4,8 +4,10 @@ import android.content.ContentValues;
 import android.database.Cursor;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import abderrazak.com.recycleviewcardview.data.model.Movie;
+import abderrazak.com.recycleviewcardview.util.ArraysUtil;
 
 /**
  * Created by abderrazak on 29/03/2016.
@@ -39,7 +41,7 @@ public class Db {
             values.put(COLUMN_IMAGE, movie.getThumbnailUrl());
             values.put(COLUMN_RELASEYEAR, movie.getYear());
             values.put(COLUMN_RATING, movie.getRating());
-            values.put(COLUMN_GENRE, movie.getGenre().toString());
+            values.put(COLUMN_GENRE, ArraysUtil.convertArrayListToString(movie.getGenre()));
 
             return values;
         }
@@ -49,8 +51,7 @@ public class Db {
             movie.setTitle(cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TITLE)));
             movie.setThumbnailUrl(cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_IMAGE)));
 
-            ArrayList<String> names = new ArrayList<>();
-            names.add(cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_GENRE)));
+            ArrayList<String> names = new ArrayList<>(Arrays.asList(cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_GENRE)).split(",")));
             movie.setGenre(names);
             movie.setRating(cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_RATING)));
             movie.setYear(cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_RELASEYEAR)));

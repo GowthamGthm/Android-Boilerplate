@@ -2,12 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'io.fabric'
 
-repositories {
-    maven {
-        url 'https://maven.fabric.io/public'
-    }
-}
-
 android {
     compileSdkVersion rootProject.ext.androidCompileSdkVersion
     buildToolsVersion rootProject.ext.androidBuildToolsVersion
@@ -33,7 +27,6 @@ android {
         // It's not necessary to specify, but I like to keep the debug keystore
         // in SC so all our debug builds (on all workstations) use the same
         // key for convenience
-
         debug {
             storeFile file('keystore/debug.keystore')
             keyAlias 'androiddebugkey'
@@ -48,8 +41,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
-
-
         debug {
             /* This one happens automatically*/
             //signingConfig signingConfigs.debug
@@ -90,6 +81,7 @@ dependencies {
     compile dependencies.glide
     compile dependencies.otto
     compile dependencies.timber
+    compile dependencies.sqlBrite
     compile(dependencies.crashlytics) {
         transitive = true;
     }
